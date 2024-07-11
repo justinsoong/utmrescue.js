@@ -36,7 +36,7 @@ describe("UtmRescue", () => {
 
   test("should not override stored UTM parameters with new URL parameters", () => {
     const storedParams = { utm_source: "original", utm_medium: "original" };
-    document.cookie = `_utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
+    document.cookie = `__utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
 
     window.location.search = "?utm_source=new&utm_medium=new&utm_campaign=new";
     const utmRescue = new UtmRescue();
@@ -51,7 +51,7 @@ describe("UtmRescue", () => {
 
   test("should add new UTM parameters to existing stored parameters", () => {
     const storedParams = { utm_source: "original" };
-    document.cookie = `_utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
+    document.cookie = `__utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
 
     window.location.search = "?utm_medium=new&utm_campaign=new";
     const utmRescue = new UtmRescue();
@@ -68,7 +68,7 @@ describe("UtmRescue", () => {
     window.location.search = "?utm_source=test&utm_medium=email";
     new UtmRescue();
 
-    expect(document.cookie).toContain("_utmrescue_data=");
+    expect(document.cookie).toContain("__utmrescue_data=");
     expect(document.cookie).toContain(
       encodeURIComponent(
         JSON.stringify({
@@ -92,7 +92,7 @@ describe("UtmRescue", () => {
 
   test("should retrieve UTM parameters from cookie", () => {
     const storedParams = { utm_source: "cookie", utm_campaign: "stored" };
-    document.cookie = `_utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
+    document.cookie = `__utmrescue_data=${encodeURIComponent(JSON.stringify(storedParams))}; path=/; domain=example.com; SameSite=Lax`;
 
     const utmRescue = new UtmRescue();
     const params = utmRescue.getUtmParams();
