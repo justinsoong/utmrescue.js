@@ -70,7 +70,7 @@ console.log(utmParams);
 3. If a UTM parameter exists in the URL and is not already stored, it's captured.
 4. If a UTM parameter is already stored, the stored value is kept (maintaining first-party attribution).
 5. The combined set of UTM parameters (stored + new) is saved in a cookie on the parent domain.
-6. You can retrieve the current set of UTM parameters at any time using `getUtmParams()`.
+6. You can retrieve the current set of UTM parameters at any time using `getUtmParams()` or accessing the cookie `__utmrescue_data` which should available to every domain underneath and including the parent.
 
 ## API
 
