@@ -17,8 +17,11 @@ module.exports = {
   output: {
     filename: 'utmrescue.min.js',
     path: path.resolve(__dirname, 'dist'),
-    library: 'UtmRescue',
-    libraryTarget: 'umd',
+    library: {
+      name: 'UtmRescue',
+      type: 'umd',
+      export: 'default'
+    },
     globalObject: 'this'
   },
 };
