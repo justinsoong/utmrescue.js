@@ -1,6 +1,6 @@
 # utmrescue.js
 
-UtmRescue is a lightweight TypeScript/JavaScript library for capturing, storing, and retrieving UTM parameters in browser environments. It maintains first-party attribution while allowing for the addition of new UTM parameters.
+UtmRescue is a lightweight browser library for capturing, storing, and retrieving UTM parameters in browser environments. It maintains first-party attribution while allowing for the addition of new UTM parameters.
 
 ## Features
 
