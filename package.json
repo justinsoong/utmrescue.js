@@ -1,6 +1,6 @@
 {
   "name": "utmrescue.js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A utility to extract UTM attribution parameters and persist them across a first party cookie at the parent domain and maintain first party attribution",
   "main": "index.js",
   "repository": "git://github.com/justinsoong/utmrescue.js.git",
