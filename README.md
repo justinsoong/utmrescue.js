@@ -22,7 +22,7 @@ npm i utmrescue.js
 Or include it directly in your HTML using a CDN:
 
 ```html
-<script src="https://unpkg.com/utmrescue.jsdist/utmrescue.min.js"></script>
+<script src="https://unpkg.com/utmrescue.js/dist/utmrescue.min.js"></script>
 ```
 
 ## Usage

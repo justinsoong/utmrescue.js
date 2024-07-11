@@ -1,4 +1,4 @@
-import UtmRescue from "../src/index";
+import { UtmRescue } from "../src/utmrescue";
 
 describe("UtmRescue", () => {
   let originalLocation: Location;
