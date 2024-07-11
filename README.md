@@ -1,4 +1,3 @@
-````markdown
 # utmrescue.js
 
 UtmRescue is a lightweight TypeScript/JavaScript library for capturing, storing, and retrieving UTM parameters in browser environments. It maintains first-party attribution while allowing for the addition of new UTM parameters.
@@ -19,7 +18,6 @@ You can install UtmRescue via npm:
 ```bash
 npm install utmrescue
 ```
-````
 
 Or include it directly in your HTML using a CDN:
 
