@@ -16,13 +16,13 @@ UtmRescue is a lightweight browser library for capturing, storing, and retrievin
 You can install UtmRescue via npm:
 
 ```bash
-npm install utmrescue
+npm i utmrescue.js
 ```
 
 Or include it directly in your HTML using a CDN:
 
 ```html
-<script src="https://unpkg.com/utmrescue/dist/utmrescue.min.js"></script>
+<script src="https://unpkg.com/utmrescue.jsdist/utmrescue.min.js"></script>
 ```
 
 ## Usage
@@ -46,11 +46,11 @@ console.log(utmParams);
 <!doctype html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/utmrescue/dist/utmrescue.min.js"></script>
+    <script src="https://unpkg.com/utmrescue.js/dist/utmrescue.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         // Initialize UtmRescue
-        var utmRescue = new UtmRescue.default();
+        var utmRescue = new UtmRescue();
 
         // Get UTM parameters
         var utmParams = utmRescue.getUtmParams();
