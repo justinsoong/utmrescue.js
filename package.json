@@ -1,12 +1,15 @@
 {
-  "name": "utmrescue.js",
-  "version": "1.0.6",
+  "name": "utmrescue",
+  "version": "1.0.7",
   "description": "A utility to extract UTM attribution parameters and persist them across a first party cookie at the parent domain and maintain first party attribution",
-  "main": "index.js",
-  "repository": "git://github.com/justinsoong/utmrescue.js.git",
+  "main": "dist/utmrescue.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenclouston/utmrescue.git"
+  },
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode production",
+    "build": "npx webpack --mode production",
     "prepare": "npm run build"
   },
   "keywords": [],
