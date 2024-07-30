@@ -41,7 +41,7 @@ class UtmRescue {
         expirationDate.getDate() + UtmRescue.COOKIE_EXPIRATION_DAYS
       );
 
-      document.cookie = `${UtmRescue.COOKIE_NAME}=${encodeURIComponent(cookieValue)}; expires=${expirationDate.toUTCString()}; path=/; domain=${this.getParentDomain()}; SameSite=Lax`;
+      document.cookie = `${UtmRescue.COOKIE_NAME}=${encodeURIComponent(cookieValue)}; expires=${expirationDate.toUTCString()}; path=/; SameSite=Lax`;
     }
   }
 
